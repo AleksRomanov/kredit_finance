@@ -2,11 +2,13 @@ body {
     font-family: 'Roboto', sans-serif;
     overflow: hidden;
 }
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
+
 .wrapper {
     display: grid;
     grid-template-columns: 300px 1fr;
@@ -14,25 +16,30 @@ body {
     'header header'
     'sidebar content';
 }
+
 .container {
     max-width: 1320px;
     margin: auto;
 }
+
 .header {
     grid-area: header;
     padding: 10px;
     box-shadow: 0 1px 5px black;
 }
+
 .header-body {
     display: flex;
     justify-content: space-between;
 }
+
 .header-body__menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 250px;
 }
+
 .header-body__photo {
     width: 50px;
     height: 50px;
@@ -41,12 +48,14 @@ body {
     transition: all 0.5s;
     cursor: pointer;
 }
+
 .header-body__profile {
     cursor: pointer;
     color: rgb(120, 194, 21);
     font-weight: 600;
     transition: all 0.5s;
 }
+
 .header-body__quit {
     outline: none;
     border: none;
@@ -58,36 +67,45 @@ body {
     cursor: pointer;
     transition: all 0.5s;
 }
+
 .header-body__quit:hover, .header-body__profile:hover, .header-body__photo:hover {
     transform: scale(1.05);
     transition: all 0.5s;
 }
+
 .main {
     grid-area: content;
 }
+
 .main-body {
     margin-top: 20px;
     display: flex;
     padding: 10px;
 }
+
 .main-body__sec1 {
     flex: 0 1 40%;
     border-right: 2px solid rgb(68, 68, 68);
     padding-right: 15px;
 }
+
 .main-body__sec2 {
     flex: 0 1 60%;
     padding-left: 30px;
 }
+
 .sec2-title {
     margin-bottom: 40px;
 }
+
 .main-body__sec2 > p {
     margin: 30px;
 }
+
 .main-body__sec2 > p > b {
     margin-right: 30px;
 }
+
 .main-body__item {
     background-color: rgb(120, 194, 21);
     border: 1px solid rgb(68, 68, 68);
@@ -96,12 +114,14 @@ body {
     margin: 10px;
     padding: 10px;
 }
+
 .main-body__item > span {
     display: inline-block;
     color: rgb(68, 68, 68);
     font-weight: 600;
     margin-bottom: 10px;
 }
+
 .main-body__filter {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -114,6 +134,7 @@ body {
     font-weight: 600;
     outline: none;
 }
+
 .aside {
     display: flex;
     justify-content: center;
@@ -122,9 +143,11 @@ body {
     color: rgb(68, 68, 68);
     height: 100vh;
 }
+
 .aside-list {
     margin-top: 50px;
 }
+
 .aside-list__link {
     position: relative;
     text-align: center;
@@ -137,6 +160,7 @@ body {
     cursor: pointer;
     width: 230px;
 }
+
 .triangle {
     position: absolute;
     right: 10px;
@@ -147,12 +171,14 @@ body {
     border-right: 5px solid transparent;
     border-top: 7px solid #fff;
 }
+
 .aside-sublist {
     display: none;
     background-color: #ddd;
     padding: 5px;
     border-radius: 5px;
 }
+
 .aside-sublist__link {
     text-align: center;
     list-style-type: none;
@@ -164,24 +190,28 @@ body {
     margin: 10px;
     cursor: pointer;
 }
+
 .table {
-	width: 100%;
-	margin-bottom: 20px;
-	border: 1px solid #dddddd;
-	border-collapse: collapse; 
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #dddddd;
+    border-collapse: collapse;
     color: #fff;
 }
+
 .table th {
-	font-weight: bold;
-	padding: 15px;
-	background-color: #444;
-	border: 1px solid #dddddd;
+    font-weight: bold;
+    padding: 15px;
+    background-color: #444;
+    border: 1px solid #dddddd;
 }
+
 .table td {
-	border: 1px solid #dddddd;
-	padding: 15px;
+    border: 1px solid #dddddd;
+    padding: 15px;
     background-color: rgb(120, 194, 21);
 }
+
 .active {
     display: flex;
     justify-content: space-around;
@@ -189,6 +219,7 @@ body {
     border-radius: 5px;
     padding: 15px;
 }
+
 .active-btn {
     cursor: pointer;
     outline: none;
@@ -200,6 +231,7 @@ body {
     font-weight: 600;
     font-size: 16px;
 }
+
 .active-btn:hover {
     background-color: rgb(120, 194, 21);
     color: #fff;
