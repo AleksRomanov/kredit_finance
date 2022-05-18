@@ -10,8 +10,8 @@ function onChange(value) {
 
 const options = [
     {
-        value: 'zhejiang',
-        label: 'Zhejiang',
+        value: 'рубль',
+        label: 'Рубль',
         children: [
             {
                 value: 'hangzhou',
