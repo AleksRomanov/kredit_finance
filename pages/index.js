@@ -4,6 +4,7 @@ import avaPic from "./pictures/ava1.png";
 import Image from 'next/image'
 import {Form, Layout} from "antd";
 import Sider from "antd/lib/layout/Sider";
+import MainMenu from "./components/main-menu";
 
 
 const {Content} = Layout;
@@ -30,28 +31,7 @@ const Index = () => {
                     </div>
                 </div>
             </div>
-
-
-            <div className="main wrapper">
-                <div className="main-body">
-                    <Layout>
-                        <Sider className="main-body__sec1">
-                            <ul className="main-body__list">
-                                <li className="main-body__item">Меню - 1</li>
-                                <li className="main-body__item">Меню - 2</li>
-                                <li className="main-body__item">Меню - 3</li>
-                            </ul>
-
-                        </Sider>
-
-                        <Content className="main-body__sec2">
-                            <Form>
-                                <p>!!!!!!</p>
-                            </Form>
-                        </Content>
-                    </Layout>
-                </div>
-            </div>
+            <MainMenu/>
 
             <style jsx>
                 {`
