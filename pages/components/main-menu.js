@@ -1,7 +1,8 @@
 import React from 'react';
 import {Form, Layout} from "antd";
 import Sider from "antd/lib/layout/Sider";
-import {Content} from "antd/es/layout/layout";
+import {Content} from "antd/lib/layout/layout";
+import MainContent from "./main-content";
 
 const MainMenu = () => {
     return (
@@ -14,14 +15,14 @@ const MainMenu = () => {
                             <li className="main-body__item">Меню - 1</li>
                             <li className="main-body__item">Меню - 2</li>
                             <li className="main-body__item">Меню - 3</li>
+                            <li className="main-body__item">Меню - 4</li>
+                            <li className="main-body__item">Меню - 5</li>
                         </ul>
 
                     </Sider>
 
-                    <Content className="main-body__sec2">
-                        <Form>
-                            <p>!!!!!!</p>
-                        </Form>
+                    <Content>
+                        <MainContent/>
                     </Content>
                 </Layout>
             </div>

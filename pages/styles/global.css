@@ -284,6 +284,10 @@ body {
     text-align: center;
 }
 
+.ant-layout {
+    flex-direction: row;
+}
+
 .ant-layout-sider {
     color: #fff;
     /*line-height: 120px;*/
